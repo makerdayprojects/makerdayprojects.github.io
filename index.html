@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  These pages contain information about running a maker day.
+  It includes details about projects, table top shows, and general information.
+
+  This content wil help stop people having to re-invent the wheel for every event, and to try and capture best practice.
+
+  Help us by forking our repositories and sending pull requests, or send us an email with a suggestion.
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
