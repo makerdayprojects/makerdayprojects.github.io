@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
+
 This information was initially created and curated by the Melbourne Maker Community
+
 
 -------
 
